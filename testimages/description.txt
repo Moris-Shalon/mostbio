@@ -1,0 +1,41 @@
+BAS Basophil - базофил
+EBO Erythroblast - эритробласт (исключен из обучения ввиду критически малого числа снимков)
+EOS Eosinophil - эозинофил
+KSC Smudge cell - мертвый лимфоцит (исключен из обучения ввиду критически малого числа снимков)
+LYA Lymphocyte (atypical) - атипичный лимфоцит (исключен из обучения ввиду критически малого числа снимков)
+LYT Lymphocyte (typical) - нормальный лимфоцит
+MMZ Metamyelocyte - метамиеолоцит
+MOB Monoblast - монобласт
+MON Monocyte - моноцит
+MYB Myelocyte - миелоцит
+MYO Myeloblast - миелобласт (исключен из обучения ввиду критически малого числа снимков)
+NGB Neutrophil (band) - палочкоядерный нейтрофил
+NGS Neutrophil (segmented) - сегментоядерный нейтрофил
+PMB Promyelocyte (bilobled) - двудольный промиелоцит (исключен из обучения ввиду критически малого числа снимков)
+PMO Promyelocyte - промиелицит
+
+
+Checking number of cells in train folder
+Basophil = 120
+Eosinophil = 1284
+Lymphocyte (typical) = 216
+Metamyelocyte = 908
+Monoblast = 84
+Monocyte = 720
+Myelocyte = 268
+Neutrophil (band) = 728
+Neutrophil (segmented) = 5596
+Promyelocyte = 208
+
+
+Checking number of cells in test folder
+Basophil = 7
+Eosinophil = 79
+Lymphocyte (typical) = 11
+Metamyelocyte = 59
+Monoblast = 5
+Monocyte = 43
+Myelocyte = 16
+Neutrophil (band) = 46
+Neutrophil (segmented) = 361
+Promyelocyte = 11
