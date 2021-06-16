@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+{% include 'base/head.html' %}
+<body class="interface">
+
+{% include 'base/top.html' %}
+
+<div class="border-extra"></div>
+<div class="border-extra-2"></div>
+
+{% include 'base/mobile-menu.html' %}
+
+{% include 'base/aside.html' %}
+
+<div class="upload-main grid">
+  <div class="upload-main-content grid">
+    <div class="upload-annotation grid">
+      <p>Загрузите изображение медицинского препарата и узнайте, что на нем изображено
+      <br>Это может быть снимок, сделанный при помощи электронного микроскопа или простой камеры смартфона в формате .jpg (.jpeg) или .png</p>
+      
+      <form class="grid" style="align-items: center; justify-items: center;" action="." method="post" enctype="multipart/form-data">{% csrf_token %}
+        <input type="file" name="upload" id="upload">
+        <label for="upload" style="align-self: center; justify-self: center;">Выберите файл</label>
+        <button>Получить результат</button>
+        <p>{{ darknet_answer }}</p>
+      </form>
+      <br>
+      
+      <div class="darknet_result" style="max-width: 100%;">
+        <img src="{{ darknet_picture }}" width="100%">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="border-extra-bottom"></div>
+<div class="border-extra-bottom-2"></div>
+
+</body>
+</html>
